@@ -2,10 +2,10 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { OrderbookModule } from './orderbook/orderbook.module';
-import { VertexModule } from './vertex/vertex.module';
+import { HttpModule } from './http/http.module';
 
 @Module({
-  imports: [OrderbookModule, VertexModule],
+  imports: [OrderbookModule, HttpModule],
   controllers: [AppController],
   providers: [AppService],
 })
